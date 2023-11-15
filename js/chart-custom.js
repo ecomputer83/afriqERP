@@ -8577,17 +8577,23 @@ if(jQuery('#home-perfomer-chart').length){
     if(jQuery('#menu-chart-02').length){
         var options = {
           series: [{
-          name: 'This Week',
-          data: [31, 40, 28, 51, 42, 109, 100]
+          name: 'Released',
+          data: [31, 40, 28, 51, 42, 100]
         }, {
-          name: 'Last Week',
-          data: [11, 32, 45, 32, 34, 52, 41]
-        }],
+          name: 'Pending Repayment',
+          data: [7, 13, 15, 9, 22, 31]
+        }, {
+			name: 'Pending Approval',
+			data: [32, 45, 32, 34, 52, 41]
+		}, {
+			name: 'Open',
+			data: [15, 17, 27, 22, 42, 38]
+		}],
           chart: {
           height: 350,
           type: 'area'
         },
-        colors: ['#1e3d73','#fe517e'],
+        colors: ['#1e3d73','#fe517e', '#f58edc', '#2ef670'],
         dataLabels: {
           enabled: false
         },
@@ -8595,14 +8601,14 @@ if(jQuery('#home-perfomer-chart').length){
           curve: 'smooth'
         },
         xaxis: {
-          type: 'datetime',
-          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-        },
-        tooltip: {
-          x: {
-            format: 'dd/MM/yy HH:mm'
-          },
-        },
+        //   type: 'datetime',
+          categories: ["May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023"]
+        }
+        // tooltip: {
+        //   x: {
+        //     format: 'dd/MM/yy HH:mm'
+        //   },
+        // },
         };
 
         var chart = new ApexCharts(document.querySelector("#menu-chart-02"), options);
