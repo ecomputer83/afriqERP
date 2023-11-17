@@ -338,6 +338,13 @@ Card
 ------------------------------------------------*/
 .iq-card { background: var(--iq-light-card); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-bottom: 30px; border: none; -webkit-box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1); box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1); }
 .iq-card-body { padding: 15px; }
+.act-card { height: 150px; margin-bottom: 20px; }
+.act-card .card-header { padding: 8px 8px; background-color: #FFF; height: 30%; }
+.act-card .iq-card-body { padding: 8px 8px; height: 60%; }
+.act-card .iq-card-body .value { font-size: 24px; font-weight: 400; }
+.act-card .card-footer { padding: 8px 8px; background-color: #FFF; }
+.act-card .card-footer { font-size: 11px; color: #CCCCCC; }
+.act-card .card-title { font-size: 10px; }
 .iq-card-body .table-dash { height: 350px; overflow-y: auto; }
 .iq-card .iq-card-header { padding: 0 20px; min-height: 60px; -ms-flex-align: center !important; align-items: center !important; border-bottom: 1px solid var(--iq-border-light); }
 .iq-card .iq-card-header .iq-header-title { display: inline-block; align-self: center !important; }

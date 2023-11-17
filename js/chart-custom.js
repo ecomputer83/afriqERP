@@ -8620,7 +8620,7 @@ if(jQuery('#home-perfomer-chart').length){
 	        plotBackgroundColor: null,
 	        plotBorderWidth: null,
 	        plotShadow: false,
-	        type: 'pie'
+	        type: 'fu'
 	    },
 	    title: {
 	        text: ''
@@ -8665,6 +8665,66 @@ if(jQuery('#home-perfomer-chart').length){
 	    }]
 	});
     }
+	// jQuery('#sales-pipeline-chart').length &&
+	// 	Highcharts.chart('sales-pipeline-chart', {
+	// 		chart: {
+	// 			type: 'funnel'
+	// 		},
+	// 		title: {
+	// 			text: ''
+	// 		},
+	// 		tooltip: {
+	// 			pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	// 		},
+	// 		accessibility: {
+	// 			point: {
+	// 				valueSuffix: '%'
+	// 			}
+	// 		},
+	// 		plotOptions: {
+	// 			series: {
+	// 				dataLabels: {
+	// 					enabled: true,
+	// 					format: '<b>{point.name}</b> ({point.y:,.0f})',
+	// 					softConnector: true
+	// 				},
+	// 				center: ['40%', '50%'],
+	// 				neckWidth: '30%',
+	// 				neckHeight: '25%',
+	// 				width: '80%'
+	// 			}
+	// 		},
+	// 		// colors: ["#1e3d73", "#fe517e", "#99f6ca", "#ffbf43"],
+	// 		series: [{
+	// 			name: 'Unique users',
+	// 			type: 'funnel',
+	// 			data: [
+	// 				['Website visits', 15654],
+	// 				['Downloads', 4064],
+	// 				['Requested price list', 1987],
+	// 				['Invoice sent', 976],
+	// 				['Finalized', 846]
+	// 			]
+	// 		}],
+	// 		// responsive: {
+	// 		// 	rules: [{
+	// 		// 		condition: {
+	// 		// 			maxWidth: 500
+	// 		// 		},
+	// 		// 		chartOptions: {
+	// 		// 			plotOptions: {
+	// 		// 				series: {
+	// 		// 					dataLabels: {
+	// 		// 						inside: true
+	// 		// 					},
+	// 		// 					center: ['50%', '50%'],
+	// 		// 					width: '100%'
+	// 		// 				}
+	// 		// 			}
+	// 		// 		}
+	// 		// 	}]
+	// 		// }
+	// 	});
     if(jQuery('#iq-product-chart').length){
     	am4core.ready(function() {
 

@@ -30,7 +30,7 @@
       <!-- Sidebar  -->
       <div class="iq-sidebar">
          <div class="iq-navbar-logo d-flex justify-content-between">
-            <a href="/sales/index.html" class="header-logo">
+            <a href="/inventory/index.html" class="header-logo">
             <img src="/images/logo.png" class="img-fluid rounded" alt="">
             <span>AfriqERP</span>
             </a>
@@ -50,9 +50,9 @@
                         <li><a href="/accounting/index.html"><i class="las la-laptop-code"></i>Account Dashboard</a></li>
                         <li><a href="/marketing/index.html"><i class="las la-ad"></i>Marketing Dashboard</a></li>
                         <!-- <li><a href="/dashboard-2.html"><i class="lab la-bandcamp"></i>Product Management</a></li> -->
-                        <li class="active"><a href="/sales/index.html"><i class="las la-atom"></i>Sales Dashboard</a></li>
+                        <li><a href="/sales/index.html"><i class="las la-atom"></i>Sales Dashboard</a></li>
                         <li><a href="/warehousing/index.html"><i class="lab la-bandcamp"></i>Warehouse Management</a></li>
-                        <li><a href="/inventory/index.html"><i class="las la-crosshairs"></i>Inventory Management</a></li>
+                        <li class="active"><a href="/inventory/index.html"><i class="las la-crosshairs"></i>Inventory Management</a></li>
                         <!-- <li><a href="/dashboard-4.html"><i class="las la-crosshairs"></i>Banking Dashboard</a></li>
                         <li><a href="/dashboard-5.html"><i class="las la-cash-register"></i>Cash Management </a></li> -->
                         <li><a href="/manufacturing/index.html"><i class="las la-bullseye"></i>Manufacturing </a></li>
@@ -217,7 +217,7 @@
                      <div class="hover-circle"><i class="ri-close-fill"></i></div>
                   </div>
                   <div class="iq-navbar-logo d-flex justify-content-between ml-3">
-                     <a href="/sales/index.html" class="header-logo">
+                     <a href="/warehousing/index.html" class="header-logo">
                      <img src="/images/logo.png" class="img-fluid rounded" alt="">
                      <span>FinDash</span>
                      </a>
@@ -457,254 +457,163 @@
       <!-- Page Content  -->
       <div id="content-page" class="content-page">
          <div class="container-fluid">
-            <div class="row">
-               <div class="col-sm-6 col-md-6 col-lg-6">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
-                           <i class="ri-focus-2-line"></i>
-                        </div>
-                        <p class="text-secondary">SALES QUOTES - OPEN</p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <h4><b>0</b></h4>
-                           <!-- <div id="iq-chart-box1"></div>
-                           <span class="text-primary"><b> +14% <i class="ri-arrow-up-fill"></i></b></span> -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-6 col-lg-6">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-danger">
-                           <i class="ri-pantone-line"></i>
-                        </div>
-                        <p class="text-secondary">SALES ORDERS - OPEN</p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <h4><b>19</b></h4>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-6">
-                  <h5 class="mb-2" style="font-size: 13px; color: #CCCCCC">SALES ORDERS RELEASED NOT SHIPPED</h5>
-                  <div class="d-flex">
-                     <div class="col-md-3 pl-0 pr-2">
-                        <div class="iq-card iq-card-block act-card iq-card-stretch iq-card-height rounded">
-                           <div class="card-header">
-                              <h6 class="card-title text-uppercase text-secondary mb-0">Ready To ship</h6>
-                           </div>
-                           <div class="iq-card-body">
-                              <span class="text-dark mb-0 value d-inline-block w-100">4</span>
-                           </div>
-                           <div class="card-footer">
-                              <a href="#" class="see-more">See more</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3 pl-0 pr-2">
-                        <div class="iq-card iq-card-block act-card iq-card-stretch iq-card-height rounded">
-                           <div class="card-header">
-                              <h6 class="card-title text-uppercase text-secondary mb-0">Partially Shipped</h6>
-                           </div>
-                           <div class="iq-card-body">
-                              <span class="text-dark mb-0 value d-inline-block w-100">0</span>
-                           </div>
-                           <div class="card-footer">
-                              <a href="#" class="see-more">See more</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3 pl-0 pr-2">
-                        <div class="iq-card iq-card-block act-card iq-card-stretch iq-card-height rounded">
-                           <div class="card-header">
-                              <h6 class="card-title text-uppercase text-secondary mb-0">Delayed</h6>
-                           </div>
-                           <div class="iq-card-body">
-                              <span class="text-dark mb-0 value d-inline-block w-100">18</span>
-                           </div>
-                           <div class="card-footer">
-                              <a href="#" class="see-more">See more</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3 pl-0 pr-2">
-                        <div class="iq-card iq-card-block act-card iq-card-stretch iq-card-height rounded">
-                           <div class="card-header">
-                              <h6 class="card-title text-uppercase text-secondary mb-0">Average Days Delayed</h6>
-                           </div>
-                           <div class="iq-card-body">
-                              <span class="text-dark mb-0 value d-inline-block w-100">11.1</span>
-                           </div>
-                           <div class="card-footer">
-                              <a href="#" class="see-more">See more</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3">
-                  <h5 class="mb-2" style="font-size: 13px; color: #CCCCCC">RETURNS</h5>
-                  <div class="d-flex">
-                     <div class="col-md-6 pl-0 pr-2">
-                        <div class="iq-card iq-card-block act-card iq-card-stretch iq-card-height rounded">
-                           <div class="card-header">
-                              <h6 class="card-title text-uppercase text-secondary mb-0">Sales Return - Open</h6>
-                           </div>
-                           <div class="iq-card-body">
-                              <span class="text-dark mb-0 value d-inline-block w-100">0</span>
-                           </div>
-                           <div class="card-footer">
-                              <a href="#" class="see-more">See more</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-6 pl-0 pr-2">
-                        <div class="iq-card iq-card-block act-card iq-card-stretch iq-card-height rounded">
-                           <div class="card-header">
-                              <h6 class="card-title text-uppercase text-secondary mb-0">Sales Credit - Open</h6>
-                           </div>
-                           <div class="iq-card-body">
-                              <span class="text-dark mb-0 value d-inline-block w-100">1</span>
-                           </div>
-                           <div class="card-footer">
-                              <a href="#" class="see-more">See more</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-2">
-                  <h5 class="mb-2" style="font-size: 13px; color: #CCCCCC">MY USER TASKS</h5>
-                  <div class="d-flex">
-                     <div class="pl-0 pr-2">
-                        <div class="iq-card iq-card-block act-card iq-card-stretch iq-card-height rounded">
-                           <div class="card-header">
-                              <h6 class="card-title text-uppercase text-secondary mb-0">Pending User Taks</h6>
-                           </div>
-                           <div class="iq-card-body">
-                              <span class="text-dark mb-0 value d-inline-block w-100">0</span>
-                           </div>
-                           <div class="card-footer">
-                              <a href="#" class="see-more">See more</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-8">
-                  <div class="iq-card iq-card-block iq-card-stretch">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Trailing Sales Orders</h4>
-                        </div>
-                        <div class="iq-card-header-toolbar d-flex align-items-center">
-                           <div class="custom-control custom-switch custom-switch-text custom-control-inline">
-                              <div class="custom-switch-inner">
-                                 <input type="checkbox" class="custom-control-input" id="switch-title" checked="">
-                                 <label class="custom-control-label" for="switch-title" data-on-label="On" data-off-label="Off">
-                                 </label>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="iq-card-body rounded">
-                        <div class="d-flex justify-content-around">
-                           <div class="price-week-box mr-5">
-                              <span>This Week</span>
-                              <h3>$<span class="counter">35000</span> <i class="ri-funds-line text-success font-size-18"></i></h3>
-                           </div>
-                           <div class="price-week-box">
-                              <span>Last Week</span>
-                              <h3>$<span class="counter">30000</span><i class="ri-funds-line text-danger font-size-18"></i></h3>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="menu-chart-02"></div>
-                  </div>
-               </div>
-               <div class="col-lg-4 d-flex flex-wrap p-0">
-                  <div class="col-md-6">
-                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height rounded">
-                        <div class="iq-card-body">
-                           <div class="row">
-                              <div class="col-lg-12 mb-2 d-flex justify-content-between">
-                                 <div class="icon iq-icon-box rounded bg-primary rounded shadow" data-wow-delay="0.2s">
-                                    <i class="las la-users"></i>
-                                 </div>
-                              </div>
-                              <div class="col-lg-12 mt-3">
-                                 <h6 class="card-title text-uppercase text-secondary mb-0">Customer</h6>
-                                 <span class="h2 text-dark mb-0 counter d-inline-block w-100">60,586</span>
-                              </div>
-                           </div>
-                           <p class="mb-0 text-muted mt-3">
-                              <span class="badge badge-primary mr-2"><i class="ri-arrow-up-fill"></i> 3.48%</span>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height rounded">
-                        <div class="iq-card-body">
-                           <div class="row">
-                              <div class="col-lg-12 mb-2 d-flex justify-content-between">
-                                 <div class="icon iq-icon-box rounded bg-warning rounded shadow" data-wow-delay="0.2s">
-                                    <i class="las la-balance-scale"></i>
-                                 </div>
-                              </div>
-                              <div class="col-lg-12 mt-3">
-                                 <h6 class="card-title text-uppercase text-secondary mb-0">Sales</h6>
-                                 <span class="h2 text-dark mb-0 counter d-inline-block w-100">80,586</span>
-                              </div>
-                           </div>
-                           <p class="mb-0 text-muted mt-3">
-                              <span class="badge badge-warning mr-2"><i class="ri-arrow-up-fill"></i> 3.48%</span>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height rounded">
-                        <div class="iq-card-body">
-                           <div class="row">
-                              <div class="col-lg-12 mb-2 d-flex justify-content-between">
-                                 <div class="icon iq-icon-box rounded bg-info rounded shadow" data-wow-delay="0.2s">
-                                    <i class="las la-plus-circle"></i>
-                                 </div>
-                              </div>
-                              <div class="col-lg-12 mt-3">
-                                 <h6 class="card-title text-uppercase text-secondary mb-0">Profit</h6>
-                                 <span class="h2 text-dark mb-0 d-inline-block w-100"><span class="counter">80</span>%</span>
-                              </div>
-                           </div>
-                           <p class="mb-0 text-muted mt-3">
-                              <span class="badge badge-info mr-2"><i class="ri-arrow-up-fill"></i> 3.48%</span>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
+            <div class="">
+               <h6 class="mb-2" style="font-size:13px;color:#CCCCCC;">OUTBOUND - TODAY</h6>
+               <div class="row">
+                  <div class="col-sm-6 col-md-3 col-lg-3">
                      <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                        <div class="iq-card-body">
-                           <div class="row">
-                              <div class="col-lg-12 mb-2 d-flex justify-content-between">
-                                 <div class="icon iq-icon-box rounded bg-danger rounded shadow" data-wow-delay="0.2s">
-                                    <i class="las la-minus-circle"></i>
-                                 </div>
-                              </div>
-                              <div class="col-lg-12 mt-3">
-                                 <h6 class="card-title text-uppercase text-secondary mb-0">Loss</h6>
-                                 <span class="h2 text-dark mb-0 d-inline-block w-100"><span class="counter">15</span>%</span>
-                              </div>
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Released - Today</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>6</b></h4>
                            </div>
-                           <p class="mb-0 text-muted mt-3">
-                              <span class="badge badge-danger mr-2"><i class="ri-arrow-up-fill"></i> 3.48%</span>
-                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">SHIPMENTS - TODAY</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">PICKED SHIPMENTS - TODAY</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                              <!-- <div id="iq-chart-box1"></div>
+                              <span class="text-primary"><b> +14% <i class="ri-arrow-up-fill"></i></b></span> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">POSTED SHIPMENTS - TODAY</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                              <!-- <div id="iq-chart-box1"></div>
+                              <span class="text-primary"><b> +14% <i class="ri-arrow-up-fill"></i></b></span> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="">
+               <h6 class="mb-2" style="font-size:13px;color:#CCCCCC;">INBOUND - TODAY</h6>
+               <div class="row">
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Expected Purchase Orders</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Arrivals</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>1</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Posted Receipts - TODAY</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>1</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="">
+               <h6 class="mb-2" style="font-size:13px;color:#CCCCCC;">INTERNAL</h6>
+               <div class="row">
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Picks - All</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Put Aways - All</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Movements - All</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <!-- <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div> -->
+                           <p class="text-uppercase text-secondary">Registered - TODAY</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h4><b>0</b></h4>
+                           </div>
                         </div>
                      </div>
                   </div>
