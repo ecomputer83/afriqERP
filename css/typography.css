@@ -290,6 +290,7 @@ Custom Text Color
 .text-spring-green { color: var(--iq-spring-green) !important; }
 .text-amber { color: var(--iq-amber) !important; }
 .text-pink {color: var(--iq-pink) !important;}
+.iq-pane-title { color: var(--iq-pane-title) !important; }
 
 /*----------------------------------------------
 Line Height
@@ -338,13 +339,14 @@ Card
 ------------------------------------------------*/
 .iq-card { background: var(--iq-light-card); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-bottom: 30px; border: none; -webkit-box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1); box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1); }
 .iq-card-body { padding: 15px; }
-.act-card { height: 150px; margin-bottom: 20px; }
-.act-card .card-header { padding: 8px 8px; background-color: #FFF; height: 30%; }
-.act-card .iq-card-body { padding: 8px 8px; height: 60%; }
-.act-card .iq-card-body .value { font-size: 24px; font-weight: 400; }
-.act-card .card-footer { padding: 8px 8px; background-color: #FFF; }
-.act-card .card-footer { font-size: 11px; color: #CCCCCC; }
-.act-card .card-title { font-size: 10px; }
+.pane-card { background: var(--afrik-primary) !important; color: #FFFFFF }
+.act-card { height: 150px; margin-bottom: 20px; background: var(--afrik-primary) !important; color: #FFFFFF; }
+.act-card .card-header { padding: 8px 8px; height: 30%; color: #FFFFFF; }
+.act-card .iq-card-body { padding: 8px 8px; height: 60%; color: #FFFFFF; }
+.act-card .iq-card-body .value { font-size: 24px; font-weight: 400; color: #FFFFFF; }
+.act-card .card-footer { padding: 8px 8px; color: #FFFFFF; }
+.act-card .card-footer .see-more { font-size: 11px; color: #FFFFFF; }
+.act-card .card-title { font-size: 10px; color: #FFFFFF; }
 .iq-card-body .table-dash { height: 350px; overflow-y: auto; }
 .iq-card .iq-card-header { padding: 0 20px; min-height: 60px; -ms-flex-align: center !important; align-items: center !important; border-bottom: 1px solid var(--iq-border-light); }
 .iq-card .iq-card-header .iq-header-title { display: inline-block; align-self: center !important; }
@@ -352,6 +354,28 @@ Card
 .iq-card-header-toolbar .nav-item a { color: var(--iq-body-text); padding: 4px 12px; font-size: 14px;  }
 .iq-card-header-toolbar .dropdown-toggle i { font-size: 22px; line-height: normal; color: var(--iq-body-text); }
 .iq-card-header-toolbar .dropdown-toggle::after { display: none; }
+
+/*-----------------------------------------
+Table
+------------------------------------------*/
+.items-table thead th { font-size: 14px; font-weight: 500; line-height: 21px; color: #333333 }
+.items-table tbody td { font-size: 13px; font-weight: 400; line-height: 19.5px; color: #333333 }
+
+/*------------------------------------------
+Inventory
+-------------------------------------------*/
+.header-pane .page-header { font-size: 20px; font-weight: 500; color: #FBAA00 }
+.action-tab { background: #FFFFFF }
+.action-tab .action-item { padding: 8px 12px }
+.action-tab .action-item a { font-size: 13px; font-weight: 400; line-height: 19.5px; color: var(--afrik-primary) !important; }
+.card.item-card { border: 1px solid #333333; }
+.item-card .card-body { padding: 15px 10px; }
+.item-card .foot-note .item-prop { font-size: 12px; font-weight: 500; line-height: 16.2px; color: #333333 }
+.item-card .foot-note .item-prop.name { color: var(--afrik-primary) !important; }
+.item-card .foot-note .item-prop.value { font-weight: 700; color: var(--afrik-primary) !important; }
+.item-div .title { font-size: 14px; font-weight: 500; color: #333333; }
+.item-div .value { font-size: 16px; font-weight: 700; color: #333333; }
+.aacordion-button.acc-button { color: var(--afrik-primary) !important; font-weight: 500; }
 
 /*--------------*/
 .nav-pills .nav-item a { color: var(--iq-body-text); }
